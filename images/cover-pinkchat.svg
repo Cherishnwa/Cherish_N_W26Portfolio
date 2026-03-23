@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 420">
+  <defs>
+    <clipPath id="left-clip">
+      <rect x="0" y="0" width="400" height="420" rx="0"/>
+    </clipPath>
+    <clipPath id="right-clip">
+      <rect x="400" y="0" width="400" height="420" rx="0"/>
+    </clipPath>
+    <clipPath id="screen1-clip">
+      <rect x="40" y="30" width="310" height="360" rx="12"/>
+    </clipPath>
+    <clipPath id="screen2-clip">
+      <rect x="450" y="30" width="310" height="360" rx="12"/>
+    </clipPath>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0010"/>
+      <stop offset="100%" style="stop-color:#2d0020"/>
+    </linearGradient>
+    <linearGradient id="divider" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E91E8C;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#E91E8C;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#E91E8C;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#E91E8C" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="420" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#C2185B" stroke-width="0.3" opacity="0.08">
+    <line x1="0" y1="84" x2="800" y2="84"/>
+    <line x1="0" y1="168" x2="800" y2="168"/>
+    <line x1="0" y1="252" x2="800" y2="252"/>
+    <line x1="0" y1="336" x2="800" y2="336"/>
+    <line x1="160" y1="0" x2="160" y2="420"/>
+    <line x1="320" y1="0" x2="320" y2="420"/>
+    <line x1="480" y1="0" x2="480" y2="420"/>
+    <line x1="640" y1="0" x2="640" y2="420"/>
+  </g>
+
+  <!-- Glow blobs -->
+  <circle cx="200" cy="210" r="160" fill="#E91E8C" opacity="0.05"/>
+  <circle cx="600" cy="210" r="160" fill="#C2185B" opacity="0.05"/>
+
+  <!-- Screen 1 shadow -->
+  <rect x="40" y="34" width="310" height="360" rx="14" fill="#000" opacity="0.4"/>
+
+  <!-- Screen 1 — Login page -->
+  <rect x="38" y="28" width="314" height="364" rx="14" fill="none" stroke="#E91E8C" stroke-width="1.5" opacity="0.5" filter="url(#glow)"/>
+  <image href="pink-chat-login.png" x="40" y="30" width="310" height="360" clip-path="url(#screen1-clip)" preserveAspectRatio="xMidYMid slice"/>
+  <!-- Browser chrome overlay at top of screen 1 -->
+  <rect x="40" y="30" width="310" height="28" rx="12" fill="#1a1a1a" opacity="0.88"/>
+  <circle cx="60" cy="44" r="5" fill="#ff5f57" opacity="0.9"/>
+  <circle cx="78" cy="44" r="5" fill="#febc2e" opacity="0.9"/>
+  <circle cx="96" cy="44" r="5" fill="#28c840" opacity="0.9"/>
+  <text x="195" y="49" font-family="monospace" font-size="8.5" fill="#aaa" text-anchor="middle">localhost:4000 — Login</text>
+
+  <!-- Screen 2 shadow -->
+  <rect x="450" y="34" width="310" height="360" rx="14" fill="#000" opacity="0.4"/>
+
+  <!-- Screen 2 — Rooms page -->
+  <rect x="448" y="28" width="314" height="364" rx="14" fill="none" stroke="#C2185B" stroke-width="1.5" opacity="0.5" filter="url(#glow)"/>
+  <image href="pink-chat-rooms.png" x="450" y="30" width="310" height="360" clip-path="url(#screen2-clip)" preserveAspectRatio="xMidYMid slice"/>
+  <!-- Browser chrome overlay at top of screen 2 -->
+  <rect x="450" y="30" width="310" height="28" rx="12" fill="#1a1a1a" opacity="0.88"/>
+  <circle cx="470" cy="44" r="5" fill="#ff5f57" opacity="0.9"/>
+  <circle cx="488" cy="44" r="5" fill="#febc2e" opacity="0.9"/>
+  <circle cx="506" cy="44" r="5" fill="#28c840" opacity="0.9"/>
+  <text x="605" y="49" font-family="monospace" font-size="8.5" fill="#aaa" text-anchor="middle">localhost:4000/rooms — Chat</text>
+  <!-- Browser chrome overlay at top -->
+  <rect x="450" y="30" width="310" height="28" rx="12" fill="#1a1a1a" opacity="0.85"/>
+  <circle cx="470" cy="44" r="5" fill="#ff5f57" opacity="0.9"/>
+  <circle cx="488" cy="44" r="5" fill="#febc2e" opacity="0.9"/>
+  <circle cx="506" cy="44" r="5" fill="#28c840" opacity="0.9"/>
+  <text x="605" y="49" font-family="monospace" font-size="9" fill="#aaa" text-anchor="middle">localhost:4000/rooms</text>
+
+  <!-- Centre divider -->
+  <rect x="393" y="0" width="2" height="420" fill="url(#divider)"/>
+  <!-- Centre dot -->
+  <circle cx="394" cy="210" r="6" fill="#E91E8C" opacity="0.9" filter="url(#glow)"/>
+
+  <!-- Bottom label bar -->
+  <rect x="0" y="388" width="800" height="32" fill="#0F0008" opacity="0.7"/>
+  <text x="400" y="408" font-family="monospace" font-size="10" fill="#F48FB1" opacity="0.8" text-anchor="middle">Pink Chat 💖 · real-time room-based messaging · node.js · socket.io · javascript</text>
+</svg>

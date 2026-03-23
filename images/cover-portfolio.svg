@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0010"/>
+      <stop offset="100%" style="stop-color:#120008"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="420" fill="url(#bg)"/>
+  <!-- Subtle grid -->
+  <g stroke="#C2185B" stroke-width="0.3" opacity="0.08">
+    <line x1="0" y1="60" x2="800" y2="60"/><line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="180" x2="800" y2="180"/><line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="300" x2="800" y2="300"/><line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="80" y1="0" x2="80" y2="420"/><line x1="160" y1="0" x2="160" y2="420"/>
+    <line x1="240" y1="0" x2="240" y2="420"/><line x1="320" y1="0" x2="320" y2="420"/>
+    <line x1="400" y1="0" x2="400" y2="420"/><line x1="480" y1="0" x2="480" y2="420"/>
+    <line x1="560" y1="0" x2="560" y2="420"/><line x1="640" y1="0" x2="640" y2="420"/>
+    <line x1="720" y1="0" x2="720" y2="420"/>
+  </g>
+  <!-- Browser chrome abstraction -->
+  <rect x="120" y="80" width="560" height="260" rx="10" fill="none" stroke="#C2185B" stroke-width="1.5" opacity="0.5"/>
+  <rect x="120" y="80" width="560" height="36" rx="10" fill="#C2185B" opacity="0.12"/>
+  <!-- Browser dots -->
+  <circle cx="148" cy="98" r="5" fill="#C2185B" opacity="0.6"/>
+  <circle cx="168" cy="98" r="5" fill="#E91E8C" opacity="0.5"/>
+  <circle cx="188" cy="98" r="5" fill="#F06292" opacity="0.45"/>
+  <!-- URL bar -->
+  <rect x="210" y="88" width="300" height="20" rx="10" fill="none" stroke="#C2185B" stroke-width="0.8" opacity="0.3"/>
+  <text x="360" y="103" font-family="monospace" font-size="8" fill="#C2185B" opacity="0.4" text-anchor="middle">cherishnwansi.dev</text>
+  <!-- Content lines inside browser -->
+  <rect x="140" y="135" width="200" height="12" rx="3" fill="#C2185B" opacity="0.15"/>
+  <rect x="140" y="155" width="140" height="8" rx="3" fill="#C2185B" opacity="0.1"/>
+  <rect x="140" y="170" width="160" height="8" rx="3" fill="#C2185B" opacity="0.1"/>
+  <rect x="140" y="195" width="80" height="28" rx="4" fill="#C2185B" opacity="0.2"/>
+  <!-- Hero image area abstraction -->
+  <rect x="380" y="130" width="280" height="190" rx="6" fill="#C2185B" opacity="0.08"/>
+  <rect x="380" y="130" width="280" height="190" rx="6" fill="none" stroke="#C2185B" stroke-width="1" opacity="0.25"/>
+  <!-- Nested squares inside hero image area -->
+  <rect x="440" y="160" width="160" height="130" rx="4" fill="none" stroke="#E91E8C" stroke-width="0.8" opacity="0.3"/>
+  <circle cx="520" cy="225" r="45" fill="#C2185B" opacity="0.08"/>
+  <circle cx="520" cy="225" r="45" fill="none" stroke="#C2185B" stroke-width="1" opacity="0.2"/>
+  <!-- Decorative corner elements -->
+  <rect x="60" y="60" width="30" height="30" fill="none" stroke="#C2185B" stroke-width="1" opacity="0.25" transform="rotate(45,75,75)"/>
+  <rect x="700" y="310" width="25" height="25" fill="none" stroke="#E91E8C" stroke-width="1" opacity="0.25" transform="rotate(20,712,322)"/>
+  <!-- Label -->
+  <text x="400" y="400" font-family="monospace" font-size="10" fill="#C2185B" opacity="0.45" text-anchor="middle">html · css · javascript · portfolio · comp3078</text>
+</svg>

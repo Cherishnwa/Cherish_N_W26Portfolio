@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 420">
+  <defs>
+    <clipPath id="s1"><rect x="40" y="30" width="310" height="360" rx="12"/></clipPath>
+    <clipPath id="s2"><rect x="450" y="30" width="310" height="360" rx="12"/></clipPath>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a001a"/>
+      <stop offset="100%" style="stop-color:#180030"/>
+    </linearGradient>
+    <linearGradient id="div" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c026d3;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#c026d3;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#c026d3;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="420" fill="url(#bg)"/>
+  <!-- grid -->
+  <g stroke="#c026d3" stroke-width="0.3" opacity="0.08">
+    <line x1="0" y1="84" x2="800" y2="84"/><line x1="0" y1="168" x2="800" y2="168"/>
+    <line x1="0" y1="252" x2="800" y2="252"/><line x1="0" y1="336" x2="800" y2="336"/>
+    <line x1="160" y1="0" x2="160" y2="420"/><line x1="320" y1="0" x2="320" y2="420"/>
+    <line x1="480" y1="0" x2="480" y2="420"/><line x1="640" y1="0" x2="640" y2="420"/>
+  </g>
+  <circle cx="200" cy="210" r="160" fill="#c026d3" opacity="0.05"/>
+  <circle cx="600" cy="210" r="160" fill="#9333ea" opacity="0.05"/>
+  <!-- screen 1 shadow -->
+  <rect x="40" y="34" width="310" height="360" rx="14" fill="#000" opacity="0.35"/>
+  <rect x="38" y="28" width="314" height="364" rx="14" fill="none" stroke="#c026d3" stroke-width="1.5" opacity="0.5" filter="url(#glow)"/>
+  <image href="weather-1.png" x="40" y="30" width="310" height="360" clip-path="url(#s1)" preserveAspectRatio="xMidYMid slice"/>
+  <!-- browser chrome 1 -->
+  <rect x="40" y="30" width="310" height="28" rx="12" fill="#1a1a1a" opacity="0.88"/>
+  <circle cx="60" cy="44" r="5" fill="#ff5f57" opacity="0.9"/>
+  <circle cx="78" cy="44" r="5" fill="#febc2e" opacity="0.9"/>
+  <circle cx="96" cy="44" r="5" fill="#28c840" opacity="0.9"/>
+  <text x="195" y="49" font-family="monospace" font-size="9" fill="#aaa" text-anchor="middle">localhost:3000</text>
+  <!-- screen 2 shadow -->
+  <rect x="450" y="34" width="310" height="360" rx="14" fill="#000" opacity="0.35"/>
+  <rect x="448" y="28" width="314" height="364" rx="14" fill="none" stroke="#9333ea" stroke-width="1.5" opacity="0.5" filter="url(#glow)"/>
+  <image href="weather-2.png" x="450" y="30" width="310" height="360" clip-path="url(#s2)" preserveAspectRatio="xMidYMid slice"/>
+  <!-- browser chrome 2 -->
+  <rect x="450" y="30" width="310" height="28" rx="12" fill="#1a1a1a" opacity="0.88"/>
+  <circle cx="470" cy="44" r="5" fill="#ff5f57" opacity="0.9"/>
+  <circle cx="488" cy="44" r="5" fill="#febc2e" opacity="0.9"/>
+  <circle cx="506" cy="44" r="5" fill="#28c840" opacity="0.9"/>
+  <text x="605" y="49" font-family="monospace" font-size="9" fill="#aaa" text-anchor="middle">localhost:3000</text>
+  <!-- divider -->
+  <rect x="393" y="0" width="2" height="420" fill="url(#div)"/>
+  <circle cx="394" cy="210" r="6" fill="#c026d3" opacity="0.9" filter="url(#glow)"/>
+  <!-- label -->
+  <rect x="0" y="388" width="800" height="32" fill="#0a001a" opacity="0.75"/>
+  <text x="400" y="408" font-family="monospace" font-size="10" fill="#e879f9" opacity="0.8" text-anchor="middle">Weather Forecast 🌤 · react.js · openweather api · city search · real-time data</text>
+</svg>

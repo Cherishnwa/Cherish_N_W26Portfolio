@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cherish Nwansi | Portfolio</title>
+  <meta name="description" content="Cherish Nwansi — Computer Programming &amp; Analysis student at George Brown Polytechnic. Full stack developer, mobile developer, and open source contributor based in Toronto, Canada." />
+
+  <!-- ============================================================
+       FONTS  (Google Fonts — loaded from CDN, no download needed)
+  ============================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- ============================================================
+       ICONS  (Bootstrap Icons via CDN)
+  ============================================================ -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- ============================================================
+       YOUR STYLESHEET  →  edit css/style.css to change colours,
+       fonts, spacing etc.
+  ============================================================ -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+    NAVIGATION
+    ─ To add/remove nav links: copy or delete an <li> block
+    ─ href="#section-id" will scroll to that section
+  ============================================================ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand">Cherish Nwansi</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#credentials">Credentials</a></li>
+        <li><a href="#resume">Résumé</a></li>
+        <li><a href="#cover-letter">Cover Letter</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#capstone">Capstone</a></li>
+        <li><a href="#professional">Professional</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="Cherish_Nwansi_CV.pdf" download class="btn-cv">⬇ CV</a></li>
+      </ul>
+
+      <!-- Hamburger for mobile -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+    HERO
+    ─ Update the typed phrases in data-typed-items (comma-separated)
+    ─ Replace GitHub avatar URL with your own photo path:
+        src="images/your-photo.jpg"
+  ============================================================ -->
+  <section id="hero">
+    <div class="hero-grid">
+
+      <!-- Left: text -->
+      <div class="hero-text">
+        <p class="eyebrow">Computer Programming &amp; Analysis · George Brown Polytechnic · Toronto, Canada</p>
+
+        <h1>Hello, I'm<br><em>Cherish Nwansi</em></h1>
+
+        <p class="hero-role">
+          <span
+            id="typed"
+            data-items="Computer Programming Student,Full Stack Developer,Python & Data Enthusiast,Android Developer — Kotlin,Java Microservices Builder,Open Source Contributor,@Cherishnwa on GitHub">
+          </span><span class="cursor-blink"></span>
+        </p>
+
+        <p class="hero-desc">
+          Building across the full stack — from Python data scripts and Java microservices
+          to Android apps in Kotlin and interactive web experiences in JavaScript.
+          
+        </p>
+
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#capstone" class="btn-primary">Capstone Project</a>
+          <a href="#contact" class="btn-outline">Get in Touch</a>
+          <!-- ↓ Update href to your actual CV PDF -->
+          <a href="Cherish_Nwansi_CV.pdf" download class="btn-outline">⬇ Download CV</a>
+        </div>
+
+        <!-- Achievement badges -->
+        <div class="hero-badges">
+          <span class="badge">🦈 Pull Shark</span>
+          <span class="badge">⚡ YOLO</span>
+          <span class="badge">🎓 George Brown College</span>
+          <span class="badge">📍 Toronto, ON</span>
+        </div>
+      </div>
+
+      <!-- Right: photo -->
+      <div class="hero-photo-wrap">
+        <!--
+          📸 HOW TO ADD YOUR OWN PHOTO:
+          1. Save your photo as:  images/profile.jpg
+          2. Change src below to: src="images/profile.jpg"
+          The GitHub avatar loads as a placeholder in the meantime.
+        -->
+        <div class="hero-photo-frame">
+          <img
+            src="images/profile.jpeg"
+            alt="Cherish Nwansi"
+            class="hero-photo"
+          />
+        </div>
+        <div class="hero-ach">
+          <span>🦈 Pull Shark</span>
+          <span>⚡ YOLO</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+    STATS STRIP — numbers animate when scrolled into view
+    ─ data-target = the final number to count up to
+  ============================================================ -->
+  <div class="stats-strip" id="statsStrip">
+    <div class="stats-inner">
+      <div class="stat"><span class="stat-num" data-target="15">0</span><span class="stat-lbl">GitHub Repositories</span></div>
+      <div class="stat"><span class="stat-num" data-target="6">0</span><span class="stat-lbl">Languages Used</span></div>
+      <div class="stat"><span class="stat-num" data-target="7">0</span><span class="stat-lbl">Courses Completed</span></div>
+      <div class="stat"><span class="stat-num" data-target="2">0</span><span class="stat-lbl">GitHub Achievements</span></div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+    ABOUT
+    ─ Update the table cells with your real details
+    ─ Replace the <img> src with your photo
+  ============================================================ -->
+  <section id="about" class="section section-alt">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title">A little <em>about</em> me</h2>
+      </div>
+
+      <div class="about-grid">
+
+        <!-- Photo + GitHub card -->
+        <div class="about-left fade-in">
+          <!--
+            📸 Replace src with your own photo, e.g.:
+               src="images/profile.jpg"
+          -->
+          <img
+            src="images/profile.jpeg"
+            alt="Cherish Nwansi"
+            class="about-photo"
+          />
+
+          <!-- GitHub mini-card -->
+          <div class="gh-card">
+            <div class="gh-card-top">
+              <i class="bi bi-github"></i>
+              <strong>@Cherishnwa</strong>
+            </div>
+            <div class="gh-stats">
+              <div><span class="gh-num">15</span><span class="gh-lbl">Repos</span></div>
+              <div><span class="gh-num">2</span><span class="gh-lbl">Followers</span></div>
+              <div><span class="gh-num">2</span><span class="gh-lbl">Following</span></div>
+            </div>
+            <div class="gh-badges">
+              <span>🦈 Pull Shark</span>
+              <span>⚡ YOLO</span>
+            </div>
+            <a href="https://github.com/Cherishnwa" target="_blank" class="gh-btn">
+              <i class="bi bi-github"></i> View Profile
+            </a>
+          </div>
+        </div>
+
+        <!-- Bio text -->
+        <div class="about-right fade-in">
+          <div class="info-card">
+            <h3>Personal Data</h3>
+            <table class="info-table">
+              <tr><td>Name</td><td>Cherish Nwansi</td></tr>
+              <tr><td>Program</td><td>Computer Programming &amp; Analysis</td></tr>
+              <tr><td>College</td><td>George Brown Polytechnic, Toronto, ON</td></tr>
+              <tr><td>GPA</td><td>3.8 / 4.0</td></tr>
+              <tr><td>Phone</td><td>+1 (437) 870-6045</td></tr>
+              <tr><td>Email</td><td><a href="mailto:cherry.nwansii@gmail.com">cherry.nwansii@gmail.com</a></td></tr>
+              <tr><td>LinkedIn</td><td><a href="https://www.linkedin.com/in/cherish-nwansi-69618334a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BpG15GElaQ%2BCPPQ6idXRq7w%3D%3D" target="_blank">linkedin.com/in/cherish-nwansi</a></td></tr>
+              <tr><td>GitHub</td><td><a href="https://github.com/Cherishnwa" target="_blank">github.com/Cherishnwa</a></td></tr>
+              <tr><td>Location</td><td>77 Mutual St, Toronto, ON M5B 0B9</td></tr>
+              <tr><td>Languages</td><td>English (Fluent) · French (Fluent)</td></tr>
+            </table>
+
+            <hr class="divider" />
+
+            <h3>Bio</h3>
+            <p>Hi, I'm Cherish Nwansi — a Computer Programming student at George Brown College in Toronto, and a builder at heart. I'm drawn to the intersection of creativity and logic: the space where a well-crafted line of code can solve a real problem, or a thoughtful UI can make someone's day just a little easier.</p>
+            <p>My journey into tech started with curiosity and has grown into a genuine passion for building across the entire stack — from wrangling data with Python and Jupyter notebooks, to designing RESTful APIs in JavaScript, architecting Java microservices, and shipping Android apps in Kotlin. I love learning by doing, which is why I maintain 15 public repositories on GitHub and contribute to open source whenever I can.</p>
+            <p>Outside of code, I bring the same energy I put into my projects into everything I do — intentional, creative, and always looking for a better way.</p>
+
+            <hr class="divider" />
+
+            <h3>Career Philosophy</h3>
+            <p>I believe the best technology disappears into the background — it just works, and it works beautifully. My goal is to build software that doesn't just function, but genuinely serves the people using it.</p>
+            <p>I approach every project with three questions: <em>Who is this for? What problem does it actually solve? And how can I build it in a way that's clean enough to be proud of?</em> I'm driven by a belief that technical excellence and human-centred design are not competing priorities — they're the same priority, seen from different angles.</p>
+            <p>As a developer, I'm committed to continuous growth, to writing code that others can read and build on, and to showing up as a collaborative, curious, and dependable team member — whether that's in a classroom, a pull request, or a production environment.</p>
+
+            <!-- Skills chips -->
+            <div class="chips">
+              <span class="chip">🐍 Python</span>
+              <span class="chip">🌐 JavaScript</span>
+              <span class="chip">☕ Java</span>
+              <span class="chip">💠 C#</span>
+              <span class="chip">💠 C#</span>
+              <span class="chip">📱 Kotlin / React Native</span>
+              <span class="chip">🗄️ SQL · Node.js</span>
+              <span class="chip">🐙 Git</span>
+              <span class="chip">🚀 DevOps</span>
+              <span class="chip">🤝 Team Leadership</span>
+              <span class="chip">🗣️ English &amp; French</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+    WHAT I BUILD (Services)
+    ─ Add/edit cards below. Each .srv-card is one speciality.
+  ============================================================ -->
+  <section id="services" class="section section-dark">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label label-light">Specialities</p>
+        <h2 class="section-title title-light">What I <em>build</em></h2>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="srv-card fade-in">
+          <span class="srv-icon">🌐</span>
+          <h3>Web Development</h3>
+          <p>Responsive, interactive apps from front to back — REST APIs, dynamic UIs, Bootstrap and clean architecture.</p>
+          <div class="srv-tags">
+            <span>JavaScript</span><span>Node.js</span><span>HTML/CSS</span><span>Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="srv-card fade-in">
+          <span class="srv-icon">🐍</span>
+          <h3>Python & Data</h3>
+          <p>Scripting, data analysis, and Jupyter notebooks — transforming raw data into clear, actionable insights.</p>
+          <div class="srv-tags">
+            <span>Python</span><span>Jupyter</span><span>Pandas</span><span>Scripting</span>
+          </div>
+        </div>
+
+        <div class="srv-card fade-in">
+          <span class="srv-icon">📱</span>
+          <h3>Android Development</h3>
+          <p>Native Android apps in Kotlin — clean architecture, Material Design and collaborative team development.</p>
+          <div class="srv-tags">
+            <span>Kotlin</span><span>Android SDK</span><span>Android Studio</span>
+          </div>
+        </div>
+
+        <div class="srv-card fade-in">
+          <span class="srv-icon">☁️</span>
+          <h3>Backend & DevOps</h3>
+          <p>Java microservices, CI/CD pipelines, Docker containerisation and professional Git workflows.</p>
+          <div class="srv-tags">
+            <span>Java</span><span>Microservices</span><span>CI/CD</span><span>Docker</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+    RÉSUMÉ
+    ─ Skill bars: change data-width="88" (0–100) and the label text
+    ─ Timeline: copy/paste .timeline-item blocks to add entries
+  ============================================================ -->
+  <section id="resume" class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">Credentials</p>
+        <h2 class="section-title">Résumé &amp; <em>experience</em></h2>
+      </div>
+
+      <!-- Skill bars + donut chart -->
+      <div class="resume-top-grid">
+
+        <div class="fade-in">
+          <h3 class="sub-heading">Technical Proficiency</h3>
+          <div id="skillBars">
+            <!-- Bar format: data-width = percentage 0–100 -->
+            <div class="bar-item">
+              <div class="bar-header"><span>HTML &amp; CSS</span><span>88%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="88"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-header"><span>Python &amp; Jupyter</span><span>85%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-header"><span>Git &amp; DevOps</span><span>80%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-header"><span>JavaScript / Full Stack</span><span>78%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="78"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-header"><span>SQL &amp; Databases</span><span>74%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="74"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-header"><span>Java &amp; Microservices</span><span>72%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="72"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-header"><span>Kotlin &amp; Android</span><span>68%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="68"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Language donut chart (built by JS) -->
+        <div class="fade-in">
+          <h3 class="sub-heading">GitHub Language Breakdown</h3>
+          <div class="donut-layout">
+            <div class="donut-wrap">
+              <svg id="donutSvg" viewBox="0 0 200 200" width="200" height="200"></svg>
+              <div class="donut-center">
+                <span class="donut-num">6</span>
+                <span class="donut-lbl">languages</span>
+              </div>
+            </div>
+            <div id="legendItems" class="legend"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education & Experience timelines -->
+      <div class="timelines-grid">
+
+        <div class="fade-in">
+          <h3 class="sub-heading">Education &amp; Certificates</h3>
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <span class="tl-time">2024 – Present</span>
+              <h4>Diploma — Computer Programming</h4>
+              <p>George Brown College, Toronto, Ontario</p>
+              <p>Python, Full Stack JavaScript, DevOps, Android/Kotlin, Java Microservices, Portfolio Development</p>
+            </div>
+
+            <div class="timeline-item">
+              <span class="tl-time">2024–2025</span>
+              <h4>GitHub Achievements — @Cherishnwa</h4>
+              <p>🦈 <strong>Pull Shark</strong> — opened and merged multiple pull requests<br>
+                 ⚡ <strong>YOLO</strong> — merged a PR without a code review</p>
+            </div>
+
+            <!-- ↓ Add your prior education here -->
+            <div class="timeline-item">
+              <span class="tl-time">Add year</span>
+              <h4>Prior Education</h4>
+              <p>Add your previous school, diploma, or high school here.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="fade-in">
+          <h3 class="sub-heading">Experience</h3>
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <span class="tl-time">2024 – Present</span>
+              <h4>Open Source Contributor</h4>
+              <p>github.com/Cherishnwa — 15 public repos across Python, JavaScript, Java, Kotlin and DevOps. Contributed to the first-contributions project.</p>
+            </div>
+
+            <div class="timeline-item">
+              <span class="tl-time">2025</span>
+              <h4>Portfolio Development Project</h4>
+              <p>George Brown College — designed and built this portfolio from scratch using HTML, CSS, JavaScript, Bootstrap and the FolioOne template with real GitHub data.</p>
+            </div>
+
+            <!-- ↓ Add your own work / volunteer experience here -->
+            <div class="timeline-item">
+              <span class="tl-time">2024 – Present</span>
+              <h4>Teacher's Assistant — George Brown Polytechnic</h4>
+              <p>Built backend systems using Python, Java, C#, SQL, and Node.js. Developed mobile interfaces with React Native. Analyzed logs, debugged full-stack issues, and led project teams to ensure high-quality results.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="tl-time">2023 – Present</span>
+              <h4>Technical Support (Informal &amp; Academic)</h4>
+              <p>Hardware diagnostics, software debugging, app troubleshooting and network configuration for peers. Guided users through device setup, connectivity issues, and app behavior using clear, supportive communication.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="tl-time">2024 – Present</span>
+              <h4>Receptionist / Server — AfroBeat Kitchen Restaurant</h4>
+              <p>Delivered fast, friendly service to 80+ customers per shift. De-escalated concerns with calm, solution-focused communication. Maintained professionalism during peak hours in a high-energy environment.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Download buttons -->
+      <div class="resume-btns fade-in">
+        <!-- ↓ Update href to your actual PDF filename -->
+        <a href="Cherish_Nwansi_CV.pdf" download class="btn-primary">⬇ Download Full Résumé (PDF)</a>
+        <a href="https://github.com/Cherishnwa" target="_blank" class="btn-outline">
+          <i class="bi bi-github"></i> View All 15 Repos
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+    PROJECTS
+    ─ Each .project-card is one project.
+    ─ TO ADD A PROJECT: copy one card block and update:
+        - The screenshot <img> src
+        - The title, description, stack tags
+        - The GitHub link (href)
+        - The "Live Demo" link (href) — or remove the demo btn
+        - The filter class (.python / .fullstack / .java / .mobile / .devops)
+
+    ─ FILTER TABS: update data-filter to match class on the card
+  ============================================================ -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">Portfolio</p>
+        <h2 class="section-title">Featured <em>projects</em></h2>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="filter-tabs fade-in" id="filterTabs">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="java">Java</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- ── 01 · NovelTea Android — CAPSTONE ───────────── -->
+        <div class="project-card fade-in capstone-card" data-cat="mobile">
+          <div class="project-img">
+            <img src="images/cover-android.svg" alt="NovelTea Android App" />
+            <span class="project-num">01</span>
+            <span class="project-badge capstone-badge">⭐ Capstone</span>
+          </div>
+          <div class="project-body">
+            <h3>NovelTea Android App</h3>
+            <p class="capstone-tag-line">Capstone Project — George Brown College</p>
+            <p>Collaborative Android app built in Kotlin — mobile UI/UX design, Android architecture components, and real-world team development on a shared codebase.</p>
+            <div class="project-tags">
+              <span>Kotlin</span><span>Android SDK</span><span>Android Studio</span><span>Mobile UI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/MatthewMacalaladGBC/Noveltea_app" target="_blank" class="btn-sm-outline">
+                <i class="bi bi-github"></i> GitHub
+              </a>
+              <a href="#capstone" class="btn-sm-primary">
+                <i class="bi bi-eye"></i> View Capstone
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 02 · Fashion MNIST Neural Network ────────── -->
+        <div class="project-card fade-in" data-cat="python">
+          <div class="project-img">
+            <img src="images/cover-fashion.svg" alt="Fashion MNIST Neural Network" />
+            <span class="project-num">02</span>
+            <span class="project-badge">Python · TensorFlow</span>
+          </div>
+          <div class="project-body">
+            <h3>Fashion MNIST Classifier 👗</h3>
+            <p>Image classification Neural Network trained on 60,000 Fashion MNIST images across 10 clothing categories — T-shirts, trousers, sneakers, bags and more. Compared two model configurations (Adam vs RMSprop) achieving ~91% test accuracy over 10 epochs.</p>
+            <div class="project-tags">
+              <span>Python</span><span>TensorFlow</span><span>Keras</span><span>NumPy</span><span>Matplotlib</span><span>Jupyter</span>
+            </div>
+            <div class="project-links">
+              <!-- ↓ Update href with your notebook GitHub repo when available -->
+              <a href="https://github.com/Cherishnwa" target="_blank" class="btn-sm-outline">
+                <i class="bi bi-github"></i> GitHub
+              </a>
+              <a href="https://www.loom.com/share/0b6e7873e4eb4f0c83267f6deb929287" target="_blank" class="btn-sm-primary">
+                <i class="bi bi-play-circle"></i> Watch Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 03 · Pink Chat ──────────────────────────────── -->
+        <div class="project-card fade-in" data-cat="fullstack">
+          <div class="project-img">
+            <img src="images/cover-pinkchat.svg" alt="Pink Chat App" />
+            <span class="project-num">03</span>
+            <span class="project-badge">Node.js · Socket.IO</span>
+          </div>
+          <div class="project-body">
+            <h3>Pink Chat 💖</h3>
+            <p>Real-time room-based messaging app. Users sign up, log in, and join topic rooms — DevOps, Cloud, Covid19, Sports, NodeJS — where messages broadcast instantly via WebSockets.</p>
+            <div class="project-tags">
+              <span>JavaScript</span><span>Node.js</span><span>Socket.IO</span><span>HTML/CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Cherishnwa/101505167_lab_test1_chat_app" target="_blank" class="btn-sm-outline">
+                <i class="bi bi-github"></i> GitHub
+              </a>
+              <!-- ↓ Replace # with your live demo URL when deployed -->
+              <a href="#" target="_blank" class="btn-sm-primary">
+                <i class="bi bi-play-circle"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 04 · Weather Forecast App ─────────────────── -->
+        <div class="project-card fade-in" data-cat="fullstack">
+          <div class="project-img">
+            <img src="images/cover-weather.svg" alt="Weather Forecast App" />
+            <span class="project-num">04</span>
+            <span class="project-badge">React · API</span>
+          </div>
+          <div class="project-body">
+            <h3>Weather Forecast App 🌤</h3>
+            <p>COMP3123 Lab Test 2 — React app that fetches real-time weather data from the OpenWeather API. Search any city to see temperature, feels-like, conditions, min/max, and a 5-day forecast with weather icons.</p>
+            <div class="project-tags">
+              <span>React.js</span><span>OpenWeather API</span><span>JavaScript</span><span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Cherishnwa/101505167_comp3123_labtest2" target="_blank" class="btn-sm-outline">
+                <i class="bi bi-github"></i> GitHub
+              </a>
+              <!-- ↓ Replace # with your deployed demo URL -->
+              <a href="#" target="_blank" class="btn-sm-primary">
+                <i class="bi bi-play-circle"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 05 · Neural Network — Iris Classification ──── -->
+        <div class="project-card fade-in" data-cat="python">
+          <div class="project-img">
+            <img src="images/cover-ml.svg" alt="Neural Network Iris Classification" />
+            <span class="project-num">05</span>
+            <span class="project-badge">Python · TensorFlow</span>
+          </div>
+          <div class="project-body">
+            <h3>Neural Network Classifier 🌸</h3>
+            <p>Multiclass classification of the Iris dataset using a Sequential Neural Network built with TensorFlow/Keras. Trained and evaluated two models — a 100-unit deep network achieving ~97% accuracy and a lightweight 10-unit model — with full hyperparameter experimentation across optimiser, layers, units, epochs, and batch size.</p>
+            <div class="project-tags">
+              <span>Python</span><span>TensorFlow</span><span>Keras</span><span>Pandas</span><span>NumPy</span><span>Jupyter</span>
+            </div>
+            <div class="project-links">
+              <!-- ↓ Update href with your notebook GitHub repo when available -->
+              <a href="https://github.com/Cherishnwa" target="_blank" class="btn-sm-outline">
+                <i class="bi bi-github"></i> GitHub
+              </a>
+              <a href="https://www.loom.com/share/e6be3af5c722483ea2ca313ae0734829" target="_blank" class="btn-sm-primary">
+                <i class="bi bi-play-circle"></i> Watch Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.projects-grid -->
+
+      <div class="section-cta fade-in">
+        <a href="https://github.com/Cherishnwa" target="_blank" class="btn-primary">
+          <i class="bi bi-github"></i> See All Repositories on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+    CAPSTONE PROJECT
+    NovelTea — React Native · Firebase · Social Book Club App
+    GitHub: https://github.com/MatthewMacalaladGBC/Noveltea_app
+  ============================================================ -->
+  <section id="capstone" class="section section-dark">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <p class="section-label label-light">Featured Project</p>
+        <h2 class="section-title title-light">NovelTea <em>Capstone</em></h2>
+        <p style="color:#C2748A;font-size:.9rem;margin-top:.5rem;">
+          A full-stack social reading platform — React Native · Firebase · OpenLibrary API
+        </p>
+      </div>
+
+      <!-- ── Hero card ── -->
+      <div class="capstone-hero fade-in">
+        <div class="capstone-img-wrap">
+          <img src="images/noveltea-2.png" alt="NovelTea Home Screen" class="capstone-main-img" />
+          <span class="capstone-label">⭐ Capstone Project</span>
+        </div>
+        <div class="capstone-info">
+          <h3 class="capstone-title">NovelTea</h3>
+          <p class="capstone-course">George Brown Polytechnic · Computer Programming &amp; Analysis · Capstone</p>
+          <p class="capstone-desc">
+            NovelTea is an innovative mobile application designed to transform the reading experience
+            into a social and community-driven journey. As a specialised networking platform, it allows
+            bibliophiles to create and manage digital book clubs, engage in real-time discussions, track
+            daily reading streaks, and receive data-driven book recommendations — all in one cross-platform app.
+          </p>
+          <div class="capstone-meta">
+            <div class="capstone-meta-item">
+              <span class="meta-label">Stack</span>
+              <div class="capstone-tags">
+                <span>React Native</span><span>Firebase</span><span>Firestore</span>
+                <span>Firebase Auth</span><span>OpenLibrary API</span><span>JavaScript</span>
+              </div>
+            </div>
+            <div class="capstone-meta-item">
+              <span class="meta-label">Type</span>
+              <span class="capstone-type">Group Capstone Project</span>
+            </div>
+            <div class="capstone-meta-item">
+              <span class="meta-label">Status</span>
+              <span class="capstone-status">✅ ~75% Complete — Final Polish Phase</span>
+            </div>
+          </div>
+          <div class="capstone-links">
+            <a href="https://github.com/MatthewMacalaladGBC/Noveltea_app" target="_blank" class="btn-primary">
+              <i class="bi bi-github"></i> View on GitHub
+            </a>
+            <a href="#capstone-gallery" class="btn-outline-light">
+              <i class="bi bi-images"></i> See Screenshots
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Project Documentation ── -->
+      <div class="capstone-docs fade-in">
+
+        <!-- Project Summary -->
+        <div class="cap-doc-card">
+          <div class="cap-doc-icon">📋</div>
+          <h3>Project Summary</h3>
+          <p>NovelTea is an innovative mobile application designed to transform the reading experience into a social and community-driven journey. As a specialised networking platform, it allows bibliophiles to create and manage digital book clubs where they can engage in real-time discussions. The app incorporates a unique "reading streak" feature to gamify literacy and motivate users to maintain daily reading habits. Beyond social connectivity, NovelTea provides data-driven book recommendations tailored to individual user preferences. The project integrates a high-performance React Native frontend with a Firebase backend, bridging the gap between solitary reading and global social interaction.</p>
+        </div>
+
+        <!-- Project Vision -->
+        <div class="cap-doc-card">
+          <div class="cap-doc-icon">🔭</div>
+          <h3>Project Vision</h3>
+          <p>The vision for NovelTea is to create the ultimate digital hub for book lovers, fostering a global community through shared literary interests. By centralising social networking, habit tracking, and personalised discovery into one mobile interface, the project aims to solve the isolation often felt in traditional reading. The core goal is to leverage gamification — such as reading streaks — to increase long-term user retention and literacy rates. The project envisions a seamless cross-platform experience that remains fast and responsive on both iOS and Android, redefining how people discover new titles and interact with fellow readers in the digital age.</p>
+        </div>
+
+        <!-- Business Requirements -->
+        <div class="cap-doc-card">
+          <div class="cap-doc-icon">📌</div>
+          <h3>Project / Business Requirements</h3>
+          <p>The project requirements focus on delivering a high-performance social ecosystem with secure user authentication managed via Firebase Auth. Key business functionalities include the ability for users to join or host public and private book clubs to facilitate real-time discussions. The system must accurately track daily reading progress to maintain user streaks, requiring robust state management. Additionally, the app must integrate discovery logic to offer curated recommendations based on community trends and user data. Technical requirements specify a NoSQL (Firestore) database to ensure real-time updates and low-latency interactions across the network.</p>
+        </div>
+
+        <!-- Project Plan -->
+        <div class="cap-doc-card">
+          <div class="cap-doc-icon">🗓️</div>
+          <h3>Project Plan</h3>
+          <p>The project plan outlines a structured development lifecycle spanning multiple sprints to move NovelTea from concept to final delivery. Key milestones include the completion of the baseline project plan and the iterative refinement of core features during Sprint 5 and 6. The schedule prioritises the integration of the React Native UI with Firebase services including Firestore and Authentication. Regular team meetings are scheduled to address technical hurdles, with risk management allocated for testing the efficiency of real-time data syncs. This organised roadmap ensures the project remains on track for a successful final implementation.</p>
+        </div>
+
+        <!-- Requirements Analysis & Design -->
+        <div class="cap-doc-card">
+          <div class="cap-doc-icon">🏗️</div>
+          <h3>Requirements Analysis &amp; Design</h3>
+          <p>The design of NovelTea utilises a Declarative UI approach within React Native to provide a smooth and responsive user experience. Analysis indicated that a NoSQL architecture was necessary to handle the dynamic nature of book club discussions and real-time social updates. The system's logic is designed around React Hooks and the Context API for efficient state management of user reading streaks. A modern aesthetic is maintained using NativeBase/Styled Components, ensuring high-quality visuals on various screen sizes. Extensive analysis was conducted to ensure the recommendation engine effectively processes user data to provide meaningful literary suggestions.</p>
+        </div>
+
+        <!-- Wireframes / Mockups -->
+        <div class="cap-doc-card">
+          <div class="cap-doc-icon">🎨</div>
+          <h3>Wireframes / Mockups</h3>
+          <p>The project's visual design started with comprehensive wireframes that mapped out the user journey from login to book club participation. These mockups focused on a clean, intuitive interface that highlights community interaction and daily reading goals. The design specifically prioritises a "discovery" feed where users can easily view recommendations and trending books. Visual indicators for reading streaks were designed to be prominent and motivating, encouraging consistent daily engagement. High-fidelity mockups were created to ensure the NovelTea brand felt welcoming and sophisticated for a literary audience, serving as the blueprint for the React Native development phase.</p>
+        </div>
+
+        <!-- Status Reports -->
+        <div class="cap-doc-card">
+          <div class="cap-doc-icon">📊</div>
+          <h3>Status Reports</h3>
+          <p>The status reports indicate consistent progress throughout the term, with the project currently meeting its major technical milestones. Recent reports highlight the successful implementation of core social features and the stabilisation of the Firebase backend. Challenges addressed include optimising the real-time performance of the book club discussion modules. The team has completed approximately <strong style="color:#F48FB1;">75% of planned deliverables</strong>, with upcoming tasks focused on final UI polishing and bug fixes. Status updates also track the attendance and contributions of team members during Sprint meetings to ensure high accountability. The project is currently in a strong position for a successful terminal launch.</p>
+        </div>
+
+        <!-- System Implementation -->
+        <div class="cap-doc-card">
+          <div class="cap-doc-icon">⚙️</div>
+          <h3>System Implementation</h3>
+          <p>The implementation phase of NovelTea involves a full-stack deployment using React Native for the mobile frontend and Google Firebase for backend services. Developers utilised Firestore to manage real-time database operations, allowing book club members to see updates and messages instantly. Security is implemented through Firebase Authentication, ensuring all user data and club privacy settings are strictly maintained. The reading streak logic is built into the application's core state management, providing persistent tracking across sessions. Final integration steps involve optimising the app for high-fidelity performance on both iOS and Android to ensure platform-agnostic accessibility.</p>
+        </div>
+
+      </div><!-- /.capstone-docs -->
+
+      <!-- ── Feature Highlights ── -->
+      <div class="capstone-features fade-in">
+        <h3 class="sub-heading title-light">Key Features</h3>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">📚</div>
+            <h4>Digital Book Clubs</h4>
+            <p>Create or join public and private book clubs. Browse by genre — Romance, Sci-Fi, Mystery, Thriller, Fantasy, Horror and more.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔥</div>
+            <h4>Reading Streaks</h4>
+            <p>Gamified daily reading habit tracker that motivates users to maintain streaks and build a consistent reading routine.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔍</div>
+            <h4>Book Discovery</h4>
+            <p>Search by author, genre, popularity, release date, and featured lists. Powered by the OpenLibrary API with real cover images.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h4>Real-Time Sync</h4>
+            <p>Firebase Firestore powers instant real-time updates across book club discussions, member activity, and reading progress.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔐</div>
+            <h4>Secure Authentication</h4>
+            <p>Firebase Auth manages secure user sign-in, profile management, and private club access controls.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h4>Cross-Platform</h4>
+            <p>Built with React Native for seamless performance on both iOS and Android from a single codebase.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Screenshot Gallery ── -->
+      <div class="capstone-gallery fade-in" id="capstone-gallery">
+        <h3 class="sub-heading title-light">Screenshots</h3>
+        <div class="gallery-grid">
+          <img src="images/noveltea-2.png"  alt="NovelTea — Genre Browse &amp; Trending"    class="gallery-img" />
+          <img src="images/noveltea-1.png"  alt="NovelTea — Category Icons"                class="gallery-img" />
+          <img src="images/noveltea-3.png"  alt="NovelTea — Book Details (The Alchemist)"  class="gallery-img" />
+          <img src="images/noveltea-5.png"  alt="NovelTea — Populated Search"              class="gallery-img" />
+          <img src="images/noveltea-6.png"  alt="NovelTea — Search Browse Screen"          class="gallery-img" />
+          <img src="images/noveltea-7.png"  alt="NovelTea — Frankenstein Book Details"     class="gallery-img" />
+          <img src="images/noveltea-4.png"  alt="NovelTea — Unmatched Route (404)"         class="gallery-img" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================  CREDENTIALS  ============================================================ -->
+  <section id="credentials" class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">Education &amp; Credentials</p>
+        <h2 class="section-title">Academic <em>credentials</em></h2>
+      </div>
+      <div class="credentials-grid">
+
+        <div class="cred-card fade-in">
+          <div class="cred-icon">🎓</div>
+          <div class="cred-body">
+            <h3>Computer Programming &amp; Analysis</h3>
+            <p class="cred-inst">George Brown Polytechnic · Toronto, Ontario</p>
+            <p class="cred-date">2023 – Present · GPA: 3.8 / 4.0</p>
+            <p>Full-stack development across Python, JavaScript, Java, C#, Kotlin, React Native, SQL, and Node.js. Lab tests, group projects, DevOps, and capstone development (NovelTea). Teacher's Assistant 2024–present.</p>
+          </div>
+        </div>
+
+        <div class="cred-card fade-in">
+          <div class="cred-icon">🏫</div>
+          <div class="cred-body">
+            <h3>West African Senior School Certificate</h3>
+            <p class="cred-inst">Methodist Girls High School</p>
+            <p class="cred-date">Prior to 2023</p>
+            <p>Completed secondary education at Methodist Girls High School, building the academic foundation that led to further studies in Computer Programming &amp; Analysis at George Brown Polytechnic, Toronto.</p>
+          </div>
+        </div>
+
+        <div class="cred-card fade-in">
+          <div class="cred-icon">🦈</div>
+          <div class="cred-body">
+            <h3>GitHub Achievements</h3>
+            <p class="cred-inst">GitHub · @Cherishnwa</p>
+            <p class="cred-date">2024–2025</p>
+            <p>🦈 <strong>Pull Shark</strong> — awarded for opening and merging multiple pull requests across projects.<br>⚡ <strong>YOLO</strong> — awarded for merging a pull request without a code review.</p>
+          </div>
+        </div>
+
+        <div class="cred-card fade-in">
+          <div class="cred-icon">📋</div>
+          <div class="cred-body">
+            <h3>Academic Transcript (Optional)</h3>
+            <p class="cred-inst">George Brown Polytechnic · GPA 3.8 / 4.0</p>
+            <p class="cred-date">2023 – Present</p>
+            <p>Official transcript available upon request. Maintaining a 3.8 GPA across Computer Programming &amp; Analysis coursework.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================  COVER LETTER  ============================================================ -->
+  <section id="cover-letter" class="section section-alt">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">Personal Data</p>
+        <h2 class="section-title">Cover <em>letter</em></h2>
+        <p style="color:var(--muted);font-size:.9rem;margin-top:.5rem;">Sample cover letter template for a Junior Developer / Technical Support role.</p>
+      </div>
+      <div class="cover-letter-wrap fade-in">
+        <div class="cover-letter-doc">
+
+          <div class="cl-header">
+            <div class="cl-sender">
+              <strong>Cherish Nwansi</strong><br>
+              77 Mutual St, Toronto ON, M5B 0B9<br>
+              +1 (437) 870-6045 &nbsp;·&nbsp; <a href="mailto:cherry.nwansii@gmail.com">cherry.nwansii@gmail.com</a><br>
+              <a href="https://github.com/Cherishnwa" target="_blank">github.com/Cherishnwa</a>
+            </div>
+            <div class="cl-date">March 2026</div>
+          </div>
+
+          <div class="cl-recipient">
+            [Hiring Manager's Name]<br>
+            [Company Name]<br>
+            [City, Province, Postal Code]
+          </div>
+
+          <p class="cl-subject">Re: Application for Junior Software Developer / Technical Support Position</p>
+
+          <div class="cl-body">
+            <p>Dear [Hiring Manager's Name],</p>
+
+            <p>I am writing to express my strong interest in the Junior Software Developer position at [Company Name]. As a Computer Programming &amp; Analysis student at George Brown Polytechnic maintaining a 3.8 GPA, with hands-on experience across the full development stack — Python, Java, C#, React Native, Node.js, and SQL — I am eager to bring both my technical skills and genuine enthusiasm for problem-solving to your team.</p>
+
+            <p>Through my role as a Teacher's Assistant at George Brown, I have built backend systems, developed mobile interfaces with React Native, debugged full-stack issues, and led project teams. My real-world projects include <em>Pink Chat</em> (a real-time Node.js/Socket.IO messaging app), a <em>Weather Forecast App</em> built with React and the OpenWeather API, and multiple neural network classifiers using TensorFlow/Keras. I am also an active open source contributor on GitHub and bring strong soft skills from my experience as a Receptionist at AfroBeat Kitchen Restaurant, where I managed 80+ customer interactions per shift with calm, solution-focused communication.</p>
+
+            <p>What draws me to [Company Name] is [reason specific to the company]. I am bilingual in English and French, a natural team leader, and deeply committed to inclusive, clear communication — qualities I bring to both technical and customer-facing environments.</p>
+
+            <p>I welcome the opportunity to discuss how my background aligns with your team. I can be reached at <a href="mailto:cherry.nwansii@gmail.com">cherry.nwansii@gmail.com</a> or +1 (437) 870-6045.</p>
+
+            <p>Thank you for your time and consideration.</p>
+
+            <p>Sincerely,<br><strong>Cherish Nwansi</strong></p>
+          </div>
+
+          <div class="cl-footer-note">
+            <i class="bi bi-info-circle"></i>
+            Template cover letter — update the <span style="background:rgba(194,24,91,.15);padding:0 4px;border-radius:3px;">[bracketed]</span> sections for each application.
+          </div>
+        </div>
+        <a href="Cherish_Nwansi_CV.pdf" download class="btn-primary" style="margin-top:2rem;">
+          <i class="bi bi-file-earmark-pdf"></i> Download Full CV / Résumé
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================  PROFESSIONAL SUMMARY  ============================================================ -->
+  <section id="professional" class="section section-dark">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label label-light">Professional Experience</p>
+        <h2 class="section-title title-light">Professional <em>summary</em></h2>
+      </div>
+      <div class="prof-grid">
+
+        <div class="fade-in">
+          <h3 class="sub-heading" style="color:white;">Professional Work Samples</h3>
+          <div class="prof-cards">
+            <div class="prof-card">
+              <div class="prof-card-icon">🎓</div>
+              <h4>Teacher's Assistant</h4>
+              <p class="prof-org">George Brown Polytechnic · Toronto, ON · 2024 – Present</p>
+              <p>Built backend systems using Python, Java, C#, SQL, and Node.js. Developed mobile interfaces with React Native. Analyzed logs, debugged full-stack issues, and led project teams to ensure clarity, progress, and high-quality academic outcomes.</p>
+            </div>
+            <div class="prof-card">
+              <div class="prof-card-icon">🍽️</div>
+              <h4>Receptionist / Server — AfroBeat Kitchen Restaurant</h4>
+              <p class="prof-org">Toronto, ON · 2024 – Present</p>
+              <p>Delivered fast, friendly service to 80+ customers per shift. De-escalated concerns with calm, solution-focused communication. Maintained professionalism and efficiency during peak hours while contributing to smooth team coordination.</p>
+            </div>
+            <div class="prof-card">
+              <div class="prof-card-icon">🔧</div>
+              <h4>Technical Support (Informal &amp; Academic)</h4>
+              <p class="prof-org">George Brown Polytechnic · 2023 – Present</p>
+              <p>Hardware diagnostics, software debugging, app troubleshooting and network configuration for peers. Guided users through device setup, OS updates, and app behavior with clear, supportive communication.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="fade-in">
+          <h3 class="sub-heading" style="color:white;">Community Service &amp; Volunteer Work</h3>
+          <div class="timeline" style="border-left-color:rgba(244,143,177,.25);">
+            <div class="timeline-item">
+              <span class="tl-time">2023 – Present</span>
+              <h4 style="color:#F48FB1;">GBC Volunteer Squad — George Brown Polytechnic</h4>
+              <p>Active member of the George Brown College Volunteer Squad — contributing to campus events, community outreach, and student support initiatives. Representing the college and giving back to the wider student community.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="tl-time">2024 – Present</span>
+              <h4 style="color:#F48FB1;">Open Source Contributor</h4>
+              <p>Contributed to the <em>first-contributions</em> open source project — a community guide that helps beginners make their first GitHub pull request. Earned the Pull Shark achievement for collaborative contributions.</p>
+            </div>
+          </div>
+
+          <h3 class="sub-heading" style="color:white;margin-top:2.5rem;">Awards &amp; Recognition</h3>
+          <div class="awards-grid">
+            <div class="award-card">
+              <span class="award-icon">🦈</span>
+              <h4>Pull Shark</h4>
+              <p>GitHub — opened and merged multiple pull requests across projects.</p>
+            </div>
+            <div class="award-card">
+              <span class="award-icon">⚡</span>
+              <h4>YOLO</h4>
+              <p>GitHub — merged a pull request without a code review.</p>
+            </div>
+            <div class="award-card">
+              <span class="award-icon">📈</span>
+              <h4>GPA 3.8 / 4.0</h4>
+              <p>George Brown Polytechnic — Computer Programming &amp; Analysis.</p>
+            </div>
+          </div>
+
+          <h3 class="sub-heading" style="color:white;margin-top:2.5rem;">Languages</h3>
+          <div class="awards-grid">
+            <div class="award-card">
+              <span class="award-icon">🇬🇧</span>
+              <h4>English</h4>
+              <p>Fluent — professional and academic proficiency.</p>
+            </div>
+            <div class="award-card">
+              <span class="award-icon">🇫🇷</span>
+              <h4>French</h4>
+              <p>Fluent — professional and academic proficiency.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================  CONTACT  ============================================================ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">Get in Touch</p>
+        <h2 class="section-title">Let's <em>connect</em></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <div class="info-card">
+            <h3>Contact Details</h3>
+            <div class="contact-links-list">
+              <a href="https://github.com/Cherishnwa" target="_blank" class="contact-item">
+                <i class="bi bi-github"></i><span>github.com/Cherishnwa</span>
+              </a>
+              <a href="mailto:cherry.nwansii@gmail.com" class="contact-item">
+                <i class="bi bi-envelope"></i><span>cherry.nwansii@gmail.com</span>
+              </a>
+              <a href="https://www.linkedin.com/in/cherish-nwansi-69618334a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BpG15GElaQ%2BCPPQ6idXRq7w%3D%3D" target="_blank" class="contact-item">
+                <i class="bi bi-linkedin"></i><span>linkedin.com/in/cherish-nwansi</span>
+              </a>
+              <div class="contact-item no-link">
+                <i class="bi bi-telephone"></i><span>+1 (437) 870-6045</span>
+              </div>
+              <div class="contact-item no-link">
+                <i class="bi bi-geo-alt"></i><span>77 Mutual St, Toronto, ON M5B 0B9</span>
+              </div>
+            </div>
+            <p class="contact-note">Open to internships, co-ops, and collaborative projects. Available in English and French.</p>
+          </div>
+        </div>
+        <form class="contact-form fade-in" id="contactForm">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <input type="text" name="subject" placeholder="Subject" required />
+          <textarea name="message" rows="5" placeholder="Your message..." required></textarea>
+          <button type="submit" class="btn-primary" id="contactBtn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> Cherish Nwansi · Computer Programming &amp; Analysis · George Brown Polytechnic · Toronto, Canada</p>
+      <div class="footer-links">
+        <a href="https://github.com/Cherishnwa" target="_blank"><i class="bi bi-github"></i> @Cherishnwa</a>
+        <a href="#hero">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0020"/>
+      <stop offset="100%" style="stop-color:#1a0035"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+    <linearGradient id="val" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#C2185B"/>
+      <stop offset="100%" style="stop-color:#E91E8C"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="800" height="420" fill="url(#bg)"/>
+
+  <!-- Grid -->
+  <g stroke="#7c3aed" stroke-width="0.3" opacity="0.1">
+    <line x1="0" y1="70" x2="800" y2="70"/><line x1="0" y1="140" x2="800" y2="140"/>
+    <line x1="0" y1="210" x2="800" y2="210"/><line x1="0" y1="280" x2="800" y2="280"/>
+    <line x1="0" y1="350" x2="800" y2="350"/>
+    <line x1="80" y1="0" x2="80" y2="420"/><line x1="160" y1="0" x2="160" y2="420"/>
+    <line x1="240" y1="0" x2="240" y2="420"/><line x1="320" y1="0" x2="320" y2="420"/>
+    <line x1="400" y1="0" x2="400" y2="420"/><line x1="480" y1="0" x2="480" y2="420"/>
+    <line x1="560" y1="0" x2="560" y2="420"/><line x1="640" y1="0" x2="640" y2="420"/>
+    <line x1="720" y1="0" x2="720" y2="420"/>
+  </g>
+
+  <!-- ── Accuracy chart area ── -->
+  <rect x="50" y="40" width="420" height="270" rx="8" fill="rgba(124,58,237,0.05)" stroke="#7c3aed" stroke-width="0.8" opacity="0.3"/>
+
+  <!-- Chart axes -->
+  <line x1="80" y1="280" x2="450" y2="280" stroke="#7c3aed" stroke-width="1" opacity="0.4"/>
+  <line x1="80" y1="60" x2="80" y2="280" stroke="#7c3aed" stroke-width="1" opacity="0.4"/>
+
+  <!-- Axis labels -->
+  <text x="265" y="308" font-family="monospace" font-size="9" fill="#7c3aed" opacity="0.5" text-anchor="middle">Epoch</text>
+  <text x="58" y="175" font-family="monospace" font-size="9" fill="#7c3aed" opacity="0.5" text-anchor="middle" transform="rotate(-90,58,175)">Accuracy</text>
+  <text x="265" y="55" font-family="monospace" font-size="10" fill="#a855f7" opacity="0.7" text-anchor="middle">Training vs Validation Accuracy (10 Epochs)</text>
+
+  <!-- Epoch tick marks -->
+  <g stroke="#7c3aed" stroke-width="0.5" opacity="0.3">
+    <line x1="117" y1="278" x2="117" y2="283"/>
+    <line x1="154" y1="278" x2="154" y2="283"/>
+    <line x1="191" y1="278" x2="191" y2="283"/>
+    <line x1="228" y1="278" x2="228" y2="283"/>
+    <line x1="265" y1="278" x2="265" y2="283"/>
+    <line x1="302" y1="278" x2="302" y2="283"/>
+    <line x1="339" y1="278" x2="339" y2="283"/>
+    <line x1="376" y1="278" x2="376" y2="283"/>
+    <line x1="413" y1="278" x2="413" y2="283"/>
+    <line x1="450" y1="278" x2="450" y2="283"/>
+  </g>
+  <g font-family="monospace" font-size="7" fill="#7c3aed" opacity="0.4" text-anchor="middle">
+    <text x="117" y="293">1</text><text x="154" y="293">2</text><text x="191" y="293">3</text>
+    <text x="228" y="293">4</text><text x="265" y="293">5</text><text x="302" y="293">6</text>
+    <text x="339" y="293">7</text><text x="376" y="293">8</text><text x="413" y="293">9</text>
+    <text x="450" y="293">10</text>
+  </g>
+
+  <!-- Training accuracy curve (rising) -->
+  <polyline
+    points="80,260 117,230 154,200 191,175 228,158 265,145 302,136 339,130 376,126 413,122 450,120"
+    fill="none" stroke="url(#acc)" stroke-width="2.5" stroke-linejoin="round" opacity="0.9"/>
+
+  <!-- Validation accuracy curve (rises then plateaus slightly lower) -->
+  <polyline
+    points="80,258 117,235 154,210 191,188 228,172 265,163 302,157 339,152 376,150 413,148 450,147"
+    fill="none" stroke="url(#val)" stroke-width="2" stroke-dasharray="6,3" stroke-linejoin="round" opacity="0.85"/>
+
+  <!-- Area fill under training curve -->
+  <polygon
+    points="80,280 80,260 117,230 154,200 191,175 228,158 265,145 302,136 339,130 376,126 413,122 450,120 450,280"
+    fill="url(#acc)" opacity="0.07"/>
+
+  <!-- Data point dots on training -->
+  <g fill="#a855f7" opacity="0.9" filter="url(#glow)">
+    <circle cx="117" cy="230" r="3"/><circle cx="154" cy="200" r="3"/>
+    <circle cx="191" cy="175" r="3"/><circle cx="228" cy="158" r="3"/>
+    <circle cx="265" cy="145" r="3"/><circle cx="302" cy="136" r="3"/>
+    <circle cx="339" cy="130" r="3"/><circle cx="376" cy="126" r="3"/>
+    <circle cx="413" cy="122" r="3"/><circle cx="450" cy="120" r="3.5"/>
+  </g>
+  <!-- Data point dots on val -->
+  <g fill="#E91E8C" opacity="0.8">
+    <circle cx="117" cy="235" r="2.5"/><circle cx="154" cy="210" r="2.5"/>
+    <circle cx="191" cy="188" r="2.5"/><circle cx="228" cy="172" r="2.5"/>
+    <circle cx="265" cy="163" r="2.5"/><circle cx="302" cy="157" r="2.5"/>
+    <circle cx="339" cy="152" r="2.5"/><circle cx="376" cy="150" r="2.5"/>
+    <circle cx="413" cy="148" r="2.5"/><circle cx="450" cy="147" r="3"/>
+  </g>
+
+  <!-- Legend -->
+  <line x1="85" y1="325" x2="110" y2="325" stroke="#a855f7" stroke-width="2.5"/>
+  <circle cx="98" cy="325" r="3" fill="#a855f7"/>
+  <text x="115" y="329" font-family="monospace" font-size="9" fill="#a855f7" opacity="0.8">train accuracy</text>
+  <line x1="220" y1="325" x2="245" y2="325" stroke="#E91E8C" stroke-width="2" stroke-dasharray="5,3"/>
+  <circle cx="233" cy="325" r="2.5" fill="#E91E8C"/>
+  <text x="250" y="329" font-family="monospace" font-size="9" fill="#E91E8C" opacity="0.8">val accuracy</text>
+
+  <!-- ── Right panel: network + accuracy badge ── -->
+  <!-- Architecture boxes -->
+  <text x="590" y="62" font-family="monospace" font-size="9" fill="#a855f7" opacity="0.6" text-anchor="middle">Network Architecture</text>
+
+  <!-- Input -->
+  <rect x="520" y="72" width="140" height="34" rx="6" fill="rgba(124,58,237,0.12)" stroke="#7c3aed" stroke-width="1.2" opacity="0.6"/>
+  <text x="590" y="93" font-family="monospace" font-size="8.5" fill="#a855f7" opacity="0.8" text-anchor="middle">Flatten  28×28 → 784</text>
+  <!-- Arrow -->
+  <line x1="590" y1="106" x2="590" y2="118" stroke="#7c3aed" stroke-width="1" opacity="0.4"/>
+  <polygon points="586,116 590,124 594,116" fill="#7c3aed" opacity="0.4"/>
+  <!-- Dense 512 -->
+  <rect x="520" y="124" width="140" height="34" rx="6" fill="rgba(168,85,247,0.15)" stroke="#a855f7" stroke-width="1.2" opacity="0.7"/>
+  <text x="590" y="145" font-family="monospace" font-size="8.5" fill="#a855f7" opacity="0.9" text-anchor="middle">Dense 512 · relu</text>
+  <!-- Arrow -->
+  <line x1="590" y1="158" x2="590" y2="170" stroke="#7c3aed" stroke-width="1" opacity="0.4"/>
+  <polygon points="586,168 590,176 594,168" fill="#7c3aed" opacity="0.4"/>
+  <!-- Dense 128 -->
+  <rect x="520" y="176" width="140" height="34" rx="6" fill="rgba(168,85,247,0.15)" stroke="#a855f7" stroke-width="1.2" opacity="0.7"/>
+  <text x="590" y="197" font-family="monospace" font-size="8.5" fill="#a855f7" opacity="0.9" text-anchor="middle">Dense 128 · relu</text>
+  <!-- Arrow -->
+  <line x1="590" y1="210" x2="590" y2="222" stroke="#7c3aed" stroke-width="1" opacity="0.4"/>
+  <polygon points="586,220 590,228 594,220" fill="#7c3aed" opacity="0.4"/>
+  <!-- Output -->
+  <rect x="520" y="228" width="140" height="34" rx="6" fill="rgba(194,24,91,0.18)" stroke="#E91E8C" stroke-width="1.5" opacity="0.8"/>
+  <text x="590" y="249" font-family="monospace" font-size="8.5" fill="#F48FB1" opacity="0.95" text-anchor="middle">Dense 10 · softmax</text>
+
+  <!-- Accuracy badge -->
+  <rect x="510" y="282" width="160" height="52" rx="8" fill="rgba(168,85,247,0.12)" stroke="#a855f7" stroke-width="1.2" opacity="0.6"/>
+  <text x="590" y="302" font-family="monospace" font-size="8" fill="#a855f7" opacity="0.7" text-anchor="middle">Option A (adam)</text>
+  <text x="590" y="318" font-family="monospace" font-size="13" fill="#a855f7" opacity="0.95" text-anchor="middle" font-weight="bold">~91% accuracy</text>
+  <text x="590" y="330" font-family="monospace" font-size="7.5" fill="#E91E8C" opacity="0.6" text-anchor="middle">60,000 training · 10,000 test images</text>
+
+  <!-- Bottom label -->
+  <text x="400" y="410" font-family="monospace" font-size="9.5" fill="#7c3aed" opacity="0.4" text-anchor="middle">python · tensorflow · keras · fashion mnist · image classification · neural network</text>
+</svg>
